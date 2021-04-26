@@ -1,0 +1,35 @@
+<h1>FLASK APP RUNNING</h1>
+<h2>Please enter your house measurements below:</h2>
+<form  method="POST">
+    {# This hidden_tag is a CSRF security feature. #}
+    {{ form.hidden_tag() }}
+    {{ form.Lot_Area.label }} {{form.Lot_Area}}
+    <br>
+    {{ form.Overal_Qual.label}} {{form.Overal_Qual}}
+    <br>
+    {{form.Year_Built.label}}{{form.Year_Built}}
+    <br>
+    {{form.Year_Remod.label}}{{form.Year_Remod}}
+    <br>
+    {{ form.Mas_Vnr_Area.label}} {{form.Mas_Vnr_Area}}
+    <br>
+    {{form.BsmtFin_SF_1.label}}{{form.BsmtFin_SF_1}}
+    <br>
+    {{form.Total_Bsmt_SF.label}}{{form.Total_Bsmt_SF}}
+    <br>
+    {{ form.First_Flr_SF.label}} {{form.First_Flr_SF}}
+    <br>
+    {{form.Gr_Liv_Area.label}}{{form.Gr_Liv_Area}}
+    <br>
+    {{form.Fireplaces.label}}{{form.Fireplaces}}
+    <br>
+    {{ form.Garage_Area.label}} {{form.Garage_Area}}
+    <br>
+    {{form.Neighborhood_NridHt.label}}{{form.Neighborhood_NridHt}}
+    <br>
+    {{form.BsmtExposure_Gd.label}}{{form.BsmtExposure_Gd}}
+    <br>
+    {{ form.Sale_Type_New.label}} {{form.Sale_Type_New}}
+    <br>
+    {{ form.submit() }}
+</form>
